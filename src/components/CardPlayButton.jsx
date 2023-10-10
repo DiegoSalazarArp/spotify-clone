@@ -4,9 +4,7 @@ import { Pause, Play } from './Player'
 
 
 export function CardPlayButton({ id }) {
-
   const { currentMusic, isPlaying, setIsPlaying, setCurrentMusic } = usePlayerStore(state => state)
-
   const isPlayingPlaylist = isPlaying && currentMusic.playlist.id === id
 
   const handleClick = () => {
